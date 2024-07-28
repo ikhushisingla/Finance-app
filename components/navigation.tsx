@@ -46,7 +46,7 @@ export const Navigation = () => {
     if (isMobile) {
         return (
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
-                <SheetTrigger>
+                <SheetTrigger asChild>
                     <Button className='font-normal bg-white/10 hover:bg-white/20 hover:text-white border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outlinenone text-white focus:bg-white/30 transition' variant="outline" size="sm">
                         <Menu className='h-4 w-4'/>
                     </Button>
