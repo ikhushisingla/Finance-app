@@ -23,9 +23,9 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-
 import { Button } from "./ui/button"
 import { Input } from "./ui/input"
+
 import { Trash } from "lucide-react"
 
 interface DataTableProps<TData, TValue> {
@@ -75,7 +75,15 @@ export function DataTable<TData, TValue>({
                 className="max-w-sm"
             />
                 {table.getFilteredSelectedRowModel().rows.length > 0 && (
-                    <Button disabled={ disabled } size="sm" variant="outline" className="ml-auto font-normal text-xs">
+                    <Button
+                        disabled={disabled}
+                        size="sm"
+                        variant="outline"
+                        className="ml-auto font-normal text-xs"
+                        onClick={() => {
+                            onDelete(table.getFilteredSelectedRowModel().rows)
+                            table.resetRowSelection()
+                        }}>
                         <Trash className="size-4 mr-2"/>
                         Delete({table.getFilteredSelectedRowModel().rows.length})
                     </Button>
