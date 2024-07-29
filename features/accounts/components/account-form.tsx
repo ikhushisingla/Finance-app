@@ -5,8 +5,10 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { insertAccountSchema } from "@/db/schema";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+
+import { insertAccountSchema } from "@/db/schema";
+
 
 const formSchema = insertAccountSchema.pick({
     name:true,

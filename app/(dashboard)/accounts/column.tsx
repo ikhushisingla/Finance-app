@@ -1,9 +1,13 @@
 "use client"
+
 import { InferResponseType } from "hono"
-import {client} from "@/lib/hono"
+import { client } from "@/lib/hono"
+
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
+
 import { ColumnDef } from "@tanstack/react-table"
+
 import { ArrowUpDown } from "lucide-react"
 
 export type ResponseType=InferResponseType<typeof client.api.accounts.$get,200>["data"][0]
