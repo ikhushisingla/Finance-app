@@ -8,6 +8,13 @@
       "when": 1722164977122,
       "tag": "0000_late_moon_knight",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1722335468966,
+      "tag": "0001_magical_namor",
+      "breakpoints": true
     }
   ]
 }
