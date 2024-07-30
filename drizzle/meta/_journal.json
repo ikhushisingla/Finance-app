@@ -15,6 +15,13 @@
       "when": 1722335468966,
       "tag": "0001_magical_namor",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1722342769633,
+      "tag": "0002_crazy_zeigeist",
+      "breakpoints": true
     }
   ]
 }
