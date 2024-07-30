@@ -19,3 +19,10 @@ export const categories = pgTable('categories', {
 })
 
 export const insertCategorySchema = createInsertSchema(categories)
+
+export const transactions = pgTable('transactions', {
+    id: text('id').primaryKey(),
+    amount: integer("amount").notNull(),
+})
+
+export const insertTransactionSchema=createInsertSchema(transactions)
