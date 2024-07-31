@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import type { Metadata,Viewport } from "next";
+import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
@@ -7,6 +8,11 @@ import { SheetProvider } from "@/providers/sheet-provider";
 import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
+
+
+export const viewport: Viewport = {
+  themeColor: '#3d82f6',
+}
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,8 +30,14 @@ export default function RootLayout({
         <body className={inter.className}>
           <QueryProviders>
             <SheetProvider />
-            <Toaster richColors theme="light"/>
-            {children}
+            <Toaster richColors theme="light" />
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange>
+              {children}
+            </ThemeProvider>
           </QueryProviders>
         </body>
         </html>
