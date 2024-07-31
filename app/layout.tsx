@@ -1,4 +1,4 @@
-import type { Metadata,Viewport } from "next";
+import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
@@ -10,13 +10,9 @@ import { Toaster } from "sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 
-export const viewport: Viewport = {
-  themeColor: '#3d82f6',
-}
-
 export const metadata: Metadata = {
   title: "WealthWise",
-  description: "The app for your daily transactions",
+  description: "The app to plan and manage your money",
   icons: {
     icon: [
       {
