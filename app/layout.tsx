@@ -11,6 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
+  manifest: "/manifest.json",
   title: "WealthWise",
   description: "The app to plan and manage your money",
   icons: {
