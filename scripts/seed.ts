@@ -15,7 +15,7 @@ const SEED_USER_ID = 'user_2jpBxKBXZXXPbtX2YMTtHlizuYl'
 const SEED_CATEGORIES = [
     {
         id: 'category_1',
-        name: 'Food',
+        name: 'Grocery',
         userId: SEED_USER_ID,
     },
     {
@@ -25,12 +25,17 @@ const SEED_CATEGORIES = [
     },
     {
         id: 'category_3',
-        name: 'Utilities',
+        name: 'Travel',
         userId: SEED_USER_ID,
     },
     {
         id: 'category_4',
-        name: 'Clothing',
+        name: 'Shopping',
+        userId: SEED_USER_ID,
+    },
+    {
+        id: 'category_5',
+        name: 'Miscellaneous',
         userId: SEED_USER_ID,
     },
 ]
@@ -38,12 +43,12 @@ const SEED_CATEGORIES = [
 const SEED_ACCOUNTS = [
     {
         id: 'account_1',
-        name: 'Checking',
+        name: 'Online',
         userId: SEED_USER_ID,
     },
     {
         id: 'account_2',
-        name: 'Savings',
+        name: 'Cash',
         userId: SEED_USER_ID,
     },
 ]
